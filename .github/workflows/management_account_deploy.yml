@@ -25,8 +25,8 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: ${{vars.AWS_GITHUB_ROLE}}
           aws-region: us-east-1
+          role-to-assume: ${{ vars.AWS_GITHUB_ROLE }}
           role-session-name: GitHubActionsSession
 
       - name: Install dependencies
