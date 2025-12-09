@@ -32,7 +32,10 @@ jobs:
         run: |
           npm ci
           cd lambda
-          npm ci
+          npm ci 
+
+      - name: Build TypeScript
+        run: npm run build
 
       - name: CDK Bootstrap (if needed)
         run: npx cdk bootstrap
