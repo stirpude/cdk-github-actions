@@ -9,7 +9,6 @@ cdk.out/
 # TypeScript
 *.js
 *.d.ts
-lib/
 dist/
 
 # IDEs
